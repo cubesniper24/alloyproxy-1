@@ -333,5 +333,5 @@ if (req.url == '/') {
    return fs.createReadStream('public/index.html').pipe(res)
 } else if (req.session.fetchURL) {
     res.redirect(307, '/fetch/' + req.session.fetchURL + req.url)
-} else return res.send(error('404', 'No valid directory or file was found!'))
+} else return res.send(error('404', 'you are an idiot!'))
 });
